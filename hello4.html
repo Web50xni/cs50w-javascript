@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener</title>
+    <style>
+        /* Estilos para el cuadrado */
+        #cuadrado {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            cursor: pointer; /* Cambia el cursor cuando pasa sobre el cuadrado */
+        }
+    </style>
+</head>
+<body>
+
+<!-- El cuadrado al que le agregaremos el event listener -->
+<div id="cuadrado"></div>
+
+<script>
+    // Obtener el elemento cuadrado por su ID
+    var cuadrado = document.getElementById('cuadrado');
+
+    // Agregar un event listener para el evento 'click'
+    cuadrado.addEventListener('click', function() {
+        // Cambiar el color del cuadrado a rojo
+        cuadrado.style.backgroundColor = 'red';
+    });
+</script>
+
+</body>
+</html>
